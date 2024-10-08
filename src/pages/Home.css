@@ -1,0 +1,44 @@
+/* Highlight Container */
+body {
+    background-color: black;
+}
+
+.highlight-container {
+    margin-top: 10px; /* Reduced gap between slider and button */
+    margin-bottom: 10px; /* Reduced space below the button */
+    text-align: center; /* Center align button */
+}
+
+/* Highlighted Text Button */
+.highlighted-text {
+    display: inline-block;
+    padding: 1rem;
+    font-size: 1.5rem;
+    color: #ffffff;
+    border-radius: 25px;
+    text-decoration: none;
+    width: calc(100% - 40px); /* Full width minus padding */
+    max-width: 800px; /* Set a max width for larger screens */
+    position: relative; /* Enable positioning for pseudo-elements */
+    background: linear-gradient(to right, #6a11cb, #2575fc); /* Gradient background */
+    transition: 0.5s ease; /* Transition for hover effect */
+}
+
+.highlighted-text:hover {
+    background-position: right center; /* Change background position on hover */
+}
+
+/* Responsive adjustments for About Section */
+.container {
+    margin: 20px auto;
+    margin-bottom: 0px; /* Center container with margin */
+}
+
+h2.title-font {
+    font-size: 1.75rem; /* Increase font size */
+}
+
+.text-lg {
+    font-size: 1.25rem; /* Adjust font size */
+}
+

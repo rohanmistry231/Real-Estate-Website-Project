@@ -1,0 +1,25 @@
+/* Property.css */
+
+/* Common Styles */
+.property-card {
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.toggle-button {
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.5s;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Add more styles as needed */
