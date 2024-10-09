@@ -140,11 +140,11 @@ const Home = () => {
 <section className={`body-font ${isDarkMode ? 'bg-gray-900' : 'bg-white'}`}>
 <div className={`container px-5 py-6 mx-auto flex flex-wrap ${isDarkMode ? 'text-gray-300' : 'text-gray-800'}`}>
     <div className="lg:w-1/2 w-full mb-10 lg:mb-0 rounded-lg overflow-hidden">
-      <div className="relative w-full h-full max-h-[35rem] max-w-4xl mx-auto">
+      <div className="relative w-full h-full max-h-[40rem] max-w-4xl mx-auto">
         <img
           alt="feature"
           className="object-cover object-center w-full h-full"
-          src="02.jpg"
+          src="featured.jpg"
           loading="lazy" // Apply lazy loading
         />
       </div>

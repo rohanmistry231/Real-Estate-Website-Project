@@ -1,5 +1,5 @@
 {
-  "name": "real-estate",
+  "name": "philipdsouza",
   "private": true,
   "version": "1.0.0",
   "main": "package.json",
@@ -15,10 +15,10 @@
     "sanity"
   ],
   "dependencies": {
-    "@sanity/vision": "^3.58.0",
+    "@sanity/vision": "^3.60.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "sanity": "^3.58.0",
+    "sanity": "^3.60.0",
     "styled-components": "^6.1.8"
   },
   "devDependencies": {

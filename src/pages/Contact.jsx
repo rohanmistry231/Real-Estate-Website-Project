@@ -55,7 +55,7 @@ const Contact = () => {
       <div className={`p-6 rounded-lg shadow-lg ${isDarkMode ? 'bg-gray-800' : 'bg-white'}`}>
         <h2 className={`text-2xl font-semibold mb-4 ${isDarkMode ? 'text-white' : 'text-black'}`}>Our Location</h2>
         <img
-          src="04.jpg"
+          src="contact.jpg"
           alt="Location"
           className="w-full h-60 object-cover rounded-lg mb-4"
           loading="lazy"

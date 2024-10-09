@@ -12,26 +12,10 @@ body {
   transition: background-color 0.3s ease; /* Smooth transition for background color */
 }
 
-/* Apply dark mode background */
-body.dark-mode {
-  background-color: #1a202c; /* Example dark background color */
-  color: #f7fafc; /* Example light text color */
-}
-
-/* Apply light mode background */
-body.light-mode {
-  background-color: #ffffff; /* Example light background color */
-  color: #1a202c; /* Example dark text color */
-}
-
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-
-/* Custom scrollbar styles */
-
-/* Custom scrollbar styles for dark theme */
 
 /* Custom scrollbar styles for larger screens */
 @media (min-width: 768px) { /* You can adjust the width as needed */

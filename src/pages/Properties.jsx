@@ -163,9 +163,14 @@ const Properties = () => {
           >
             {/* Left Section: Property Details */}
             <div className="lg:w-1/2 w-full space-y-6 lg:mr-6">
-              <h2 className="text-2xl font-semibold text-blue-300">
+              <h2
+                className={`text-2xl font-bold ${
+                  isDarkMode ? "text-indigo-400" : "text-indigo-600"
+                }`}
+              >
                 {property.name}
               </h2>
+
               <div className="text-lg">
                 <strong>Price:</strong> <span>{property.price}</span>
               </div>

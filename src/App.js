@@ -5,13 +5,14 @@ import Footer from './components/Footer';
 import Home from './pages/Home';
 import Properties from './pages/Properties';
 import Contact from './pages/Contact';
-import { ThemeProvider } from './ThemeContext';
+import { ThemeProvider, useTheme } from './ThemeContext'; // Import ThemeContext
 
 function App() {
+  const { isDarkMode } = useTheme(); // Get isDarkMode from ThemeContext
+
   return (
     <Router>
-      <ThemeProvider>
-      <div className="flex flex-col min-h-screen">
+      <div className={`flex flex-col min-h-screen ${isDarkMode ? 'dark' : 'light'}`}>
         <Navbar />
         <main className="flex-grow">
           <Routes>
@@ -22,7 +23,6 @@ function App() {
         </main>
         <Footer />
       </div>
-      </ThemeProvider>
     </Router>
   );
 }

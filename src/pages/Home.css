@@ -1,8 +1,4 @@
 /* Highlight Container */
-body {
-    background-color: black;
-}
-
 .highlight-container {
     margin-top: 10px; /* Reduced gap between slider and button */
     margin-bottom: 10px; /* Reduced space below the button */
