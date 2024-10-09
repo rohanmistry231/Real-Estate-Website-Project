@@ -71,6 +71,7 @@ const Properties = () => {
 
   const buildVideoUrl = (video) => {
     if (video?.asset?._ref) {
+      // eslint-disable-next-line
       const [_, id, extension] = video.asset._ref.split("-");
       return `https://cdn.sanity.io/files/${client.config().projectId}/${
         client.config().dataset
@@ -159,7 +160,7 @@ const Properties = () => {
             key={property._id}
             className={`property-card flex flex-col lg:flex-row ${
               isDarkMode ? "bg-gray-700" : "bg-white"
-            } p-6 mb-6 rounded-lg shadow-lg animate-fade-in`}
+            } p-6 mb-6 rounded-lg shadow-[0_2px_8px_0px_rgba(0,0,0,0.4)] animate-fade-in`}
           >
             {/* Left Section: Property Details */}
             <div className="lg:w-1/2 w-full space-y-6 lg:mr-6">
