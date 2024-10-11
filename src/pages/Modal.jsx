@@ -8,7 +8,7 @@ const Modal = ({ isOpen, onClose, content, isDarkMode }) => {
     <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50">
       <div
         className={`p-8 rounded-lg shadow-lg w-11/12 md:w-2/3 lg:w-1/2 overflow-y-auto max-h-screen ${
-          isDarkMode ? 'bg-gray-800 text-white' : 'bg-white text-gray-800'
+          isDarkMode ? 'bg-gray-700 text-white' : 'bg-white text-gray-700'
         }`}
       >
         {/* Modal Header */}

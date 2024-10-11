@@ -254,9 +254,9 @@ const Properties = () => {
                 <button
                   className={`w-full h-48 flex items-center justify-center rounded-lg shadow-lg ${
                     isDarkMode
-                      ? "bg-gray-600 text-white"
-                      : "bg-gray-100 text-indigo-600"
-                  } font-semibold hover:bg-indigo-100 transition duration-300 ease-in-out`}
+                      ? "bg-gray-600 text-gray-200 hover:bg-gray-500" // Dark mode styles
+                      : "bg-gray-200 text-gray-800 hover:bg-gray-300" // Light mode styles
+                  } font-semibold transition duration-300 ease-in-out`}
                   onClick={() => handleMorePhotos(property)}
                 >
                   Click Here for More Photos
@@ -291,12 +291,14 @@ const Properties = () => {
               type: "image",
               src: urlFor(img).url(),
             })),
-            ...selectedProperty.videoGallery.map((vid) => ({
-              type: "video",
-              src: buildVideoUrl(vid),
-            })),
+            ...(selectedProperty.videoGallery?.length > 0 // Check if videos exist
+              ? selectedProperty.videoGallery.map((vid) => ({
+                  type: "video",
+                  src: buildVideoUrl(vid),
+                }))
+              : []), // Return an empty array if no videos exist
           ]}
-          isDarkMode={isDarkMode} // Pass the dark mode state
+          isDarkMode={isDarkMode} // Pass the dark mode state to the Modal
         />
       )}
     </div>
